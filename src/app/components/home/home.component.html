@@ -54,9 +54,9 @@
                             totalItems: totalRecords }" >
                       
         <mat-card-header>
-          <mat-card-title class="card-title">{{ producto.titulo | uppercase}}</mat-card-title>
+          <mat-card-title class="card-title">{{ producto.titulo | uppercase }}</mat-card-title>
         </mat-card-header>
-        <img matCardImage [src]="producto.url" />
+        <img matCardImage [src]="producto.url | lowercase" />
         <mat-divider></mat-divider>
         <mat-list-item>
           <p class="text-left">Precio:{{producto.precio | currency}}</p>
