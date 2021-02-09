@@ -1,0 +1,24 @@
+
+[
+{
+    "id":48,
+    "name":"Black Rick",
+    "status":"Alive",
+    "species":"Human",
+    "type":"",
+    "gender":"Male",
+    "origin":{"name":"unknown","url":""},
+    "location":{"name":"Citadel of Ricks",
+        "url":"https://rickandmortyapi.com/api/location/3"},
+        "image":"https://rickandmortyapi.com/api/character/avatar/48.jpeg",
+        "episode":
+        ["https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/28"],
+        "url":
+        "https://rickandmortyapi.com/api/character/48",
+        "created":"2017-11-05T11:15:26.044Z"
+},
+{"id":319,"name":"Shmooglite Runner","status":"unknown","species":"Alien","type":"Animal","gender":"Male","origin":{"name":"Resort Planet","url":"https://rickandmortyapi.com/api/location/37"},"location":{"name":"Resort Planet","url":"https://rickandmortyapi.com/api/location/37"},"image":"https://rickandmortyapi.com/api/character/avatar/319.jpeg","episode":["https://rickandmortyapi.com/api/episode/26"],"url":"https://rickandmortyapi.com/api/character/319","created":"2018-01-05T14:59:34.798Z"},
+{"id":480,"name":"Purple Morty","status":"Alive","species":"Alien","type":"","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/480.jpeg","episode":["https://rickandmortyapi.com/api/episode/28"],"url":"https://rickandmortyapi.com/api/character/480","created":"2018-05-22T17:24:38.571Z"},
+    {"id":590,"name":"High Pilot","status":"unknown","species":"Human","type":"","gender":"Male","origin":{"name":"Earth (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"location":{"name":"Earth (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"image":"https://rickandmortyapi.com/api/character/avatar/590.jpeg","episode":["https://rickandmortyapi.com/api/episode/36"],"url":"https://rickandmortyapi.com/api/character/590","created":"2020-05-07T12:55:35.833Z"} 
+]

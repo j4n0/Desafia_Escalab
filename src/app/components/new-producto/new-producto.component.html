@@ -1,0 +1,30 @@
+<div class="new-post-container">
+    <form [formGroup]="newproductoform" (ngSubmit)="addNewPost(newproductoform.value)">
+      <mat-form-field>
+        <mat-label>titulo</mat-label>
+        <input matInput placeholder="Title producto" formControlName="titulo">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>precio</mat-label>
+        <input matInput placeholder="Precio Producto" formControlName="precio">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="categoria" multiple formControlName="categoria">
+          <mat-option value="Comprimidos">Comprimidos</mat-option>
+          <mat-option value="Gotas">Gotas</mat-option>
+          <mat-option value="Supositorios">Supositorios</mat-option>
+          <mat-option value="Comprimidos Recubiertos">Comprimidos Recubiertos</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="container-input-file">
+        <label class="custom-file">
+          <input type="file" formControlName="url" (change)="handleImage($event)" />
+          <mat-icon>cloud_upload</mat-icon><span>CHOOSE IMAGE</span>
+        </label>
+      </div>
+      <div class="container-button">
+        <input type="submit" class="mat-flat-button" value="Save" [mat-dialog-close]="true">
+      </div>
+    </form>
+  </div>
+  

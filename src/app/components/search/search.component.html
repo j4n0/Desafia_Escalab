@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="card-grid">
+    <mat-card class="character-card" *ngFor="let producto of productoService.productosFiltrado" >
+      <mat-card-header>
+        <mat-card-title class="card-title">{{ producto.titulo }}</mat-card-title>
+      </mat-card-header>
+      <img matCardImage [src]="producto.url" />
+      <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="onMoreInformation(producto.id)">Ver más...</button>
+        </mat-card-actions>
+    </mat-card>
+      </div>
+</div>

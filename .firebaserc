@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ngblog-46b68": {
+      "hosting": {
+        "ngblog": [
+          "ngblog-46b68"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ngblog-46b68"
+  }
+}

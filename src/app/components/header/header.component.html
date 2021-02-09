@@ -1,0 +1,28 @@
+<mat-toolbar class="header-toolbar" color="primary">
+  <mat-toolbar-row>
+    <div class="container">
+      <div class="row arownd-xs middle-xs">
+        <nav class="navbar navbar-light bg-light col-xs-4">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="/assets//images/LOGO-MUNICIPALIDAD-EL-BOSQUE.png" alt="" loading="lazy">
+          </a>
+        </nav>
+        <nav class="col-xs-8 end-xs">
+          <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+          
+
+          <a mat-button routerLink="/about" routerLinkActive="active">About</a>
+
+          <a mat-button routerLink="/admin/profile/" routerLinkActive="active" *ngIf="authSvc.userData$ | async">admin</a>
+
+          <a *ngIf="authSvc.userData$ | async; else showLogin" (click)="onLogout()">
+            <button mat-button>Logout</button>
+          </a>
+          <ng-template #showLogin>
+            <a mat-button routerLink="/login" routerLinkActive="active">Login</a>
+          </ng-template>
+        </nav>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
